@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Список игр</h1>
+    <ul>
+        {% for game in game_list %}
+        <li><a href='/list_game/{{game.id}}'>{{ game.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+<!--/list_game/{{game.id}}-->
